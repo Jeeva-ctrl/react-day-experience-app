@@ -1,12 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Demo at  : https://jeeva-ctrl.github.io/react-day-experience-app/
 
-## Available Scripts
-
-In the project directory, you can run:
+Note :  Work in progress.Not Completed Yet.
 
 ### `npm start`
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-Demo at  : https://jeeva-ctrl.github.io/react-day-experience-app/
