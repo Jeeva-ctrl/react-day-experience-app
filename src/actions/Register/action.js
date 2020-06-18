@@ -14,13 +14,12 @@ export const RegisterUser = (username, email, password, callBack) => (
 ) => {
   console.log(username);
   dispatch({
-    type: "CLEAR_ERROR"
+    type: "CLEAR_ERROR",
   });
   axios
     .post(url + "/Register", { username, email, password })
     .then((response) => {
-      console.log("repso", response);
-      if (response.status == 200) {
+      if (response.status === 200) {
         callBack();
         if (response.data.isSuccess)
           return dispatch(dispatchPostResponse(response));
@@ -33,10 +32,12 @@ export const RegisterUser = (username, email, password, callBack) => (
       }
     })
     .catch((error) => {
+      console.log("n/W error",error);
       callBack();
       dispatch({
         type: "HTTP_ERROR",
-        payload: "Sorry 😞 Error occured while processing your request .Please try again after some time .",
+        payload:
+          "Sorry 😞 Error occured while processing your request .Please try again after some time .",
       });
     });
 };

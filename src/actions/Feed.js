@@ -13,14 +13,14 @@ export const FetchFeed = (callBack) => (dispatch) => {
   axios
     .get(url + "/Feed")
     .then((response) => {
-      if (response.status == 200) {
+      if (response.status === 200) {
         callBack();
         var res = dispatchPostResponse(response.data);
         return dispatch(res);
       }
     })
     .catch((error) => {
-        console.log("error",error)
+      console.log("n/W error", error);
       callBack();
       dispatch({
         type: "FETCH_FAILURE",
