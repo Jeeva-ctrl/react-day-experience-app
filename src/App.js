@@ -1,26 +1,33 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Register from '../src/components/Register/Register'
+import Login from '../src/components/Login/Login'
+import { BrowserRouter ,Route, Switch} from 'react-router-dom';
+import { Provider } from 'react-redux';
+import Home from '../src/components/Home/Home';
+
+import Nav from '../src/components/Nav/Nav';
+import { connect } from "react-redux";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    
+    <div >
+      <Nav currentUser = {false}/>
+      <Switch>
+      <Route path="/react-day-experience-app" exact component={Home} />
+      <Route path="/register" component={Register} />
+      <Route path="/login" component={Login} />
+     </Switch>
     </div>
+   
   );
 }
+const mapStateToProps = (state)=>(
+  {
+    currentUser : null
+  }
+)
 
-export default App;
+export default connect(mapStateToProps)(App);

@@ -1,38 +1,43 @@
-.App {
+.nav-link{
+  padding: 0 10px !important;
+  font-weight: 800 !important;
+  font-size: 15px !important
+}
+body{
+  font-family: 'Odibee Sans', cursive;
+  font-size: 40px;
+}
+.error{
+ 
+    font-family: 'Odibee Sans', cursive !important;
+    font-size: 40px !important;
+
+}
+.navbar-brand{
+  font-weight: 800 !important;
+  font-size: 25px !important;
+  color: skyblue !important;
+}
+
+.link_text{
+  color: skyblue !important;
+}
+.banner{
+  background-color: skyblue;
+  border-radius: 10px;
+   
+}
+.banner .container {
+  padding: 30px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo-font{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 900;
+  font-size: 70px;
+  color: aliceblue;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner .container p{
+  color: aliceblue;
+ 
 }
