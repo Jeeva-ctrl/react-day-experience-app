@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://localhost:5001";
+const url = "https://dailyexperienceapi.azurewebsites.net";
 
 function dispatchPostResponse(response) {
   return {

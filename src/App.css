@@ -5,7 +5,7 @@
 }
 body{
   font-family: 'Odibee Sans', cursive;
-  font-size: 40px;
+ 
 }
 .error{
  
@@ -45,12 +45,85 @@ body{
   width: 25px;
   height: 25px;
 }
+.profileicon{
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  display: inline-block;
+  border-radius: 30px;
+}
+@media only screen and (min-device-width: 480px) {
+  body{
+    font-family: 'Odibee Sans', cursive;
+  
+  }
+}
 
 @media only screen and (max-device-width: 480px) {
+  
   .home_nav{
     display: none;
   }
   .login_email{
     display: none;
   }
+}
+.profile_name{
+
+  color: yellowgreen;
+  padding: 5px;
+}
+.profile_message{
+  padding: 10px;
+  text-align: center;
+  font-style: italic;
+}
+.feed_like_section{
+  justify-content: space-evenly;
+}
+.feed_like_section div{
+  display: flex;
+
+}
+.article-meta{
+  display: block;
+}
+.info{
+  margin: 0 1.5rem 0 .3rem;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1rem;
+}
+.author{
+  display: block;
+}
+.date{
+  display: block;
+  color:  cornflowerblue;
+}
+.article-preview{
+  padding: 20px;
+  background-color: aliceblue;
+  border: 1px solid #ffffff;
+}
+.footer_section{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   justify-content: space-evenly;
+   padding: 10px;
+}
+.footer_section div{
+  display: flex;
+}
+.description{
+  padding:20px;
+}
+.footer_section div{
+  cursor: pointer;
+
+}
+
+.comments :hover{
+   text-decoration: underline;
 }

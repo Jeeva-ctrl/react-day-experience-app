@@ -5,6 +5,7 @@ import { connect } from "react-redux";
 import CustomizedDialogs from "../Modal";
 import Loader from "../Loader";
 import { withRouter } from "react-router";
+import Feeds from "../Feeds";
 class Home extends Component {
   state = {
     showLoading: true,
@@ -31,6 +32,11 @@ class Home extends Component {
           ""
         ) : (
           <Loader showLoading={true} />
+        )}
+        {this.props.feedInfo.feed ? (
+          <Feeds feeds={this.props.feedInfo.feed} />
+        ) : (
+          ""
         )}
       </div>
     );
